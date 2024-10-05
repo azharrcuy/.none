@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Jenis Angka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Masukkan Username" />
+            <input type="password" id="password" placeholder="Masukkan Password" />
+            <button id="loginButton">Login</button>
+
+            <div class="number-checker hidden">
+                <h2>Cek Jenis Angka</h2>
+                <input type="number" id="numberInput" placeholder="Masukkan angka" disabled />
+                <select id="checkType" disabled>
+                    <option value="ganjil">Cek Ganjil/Genap</option>
+                    <option value="genap">Cek Genap</option>
+                    <option value="positif">Cek Bilangan Bulat Positif</option>
+                </select>
+                <button id="checkButton" disabled>Cek</button>
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
